@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MainPage } from './components/mainPage';
 import { PageWithGraph } from './components/secondPage';
 import { Registr } from './components/registrPage';
-import { BurgerMenu } from './components/burgerMenuComponent';
 
 class App extends React.Component {
 

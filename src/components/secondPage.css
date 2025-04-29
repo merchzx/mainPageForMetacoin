@@ -10,7 +10,7 @@
 
 #forBackk {
     background-image: url('scrollbackground.png');
-    background-color: black;
+    background-color: #210B54;
     height: 100vh;
 }
 
@@ -33,6 +33,10 @@
 .exchange {
     background-color: rgba(31, 12, 71, 0.4);
     border-radius: 14px;
+}
+
+.pair {
+    font-size: grid ;
 }
 
 .pooledTok {
@@ -73,6 +77,7 @@ header {
     font-size: 42px;
     letter-spacing: -0.5px;
     padding-top: -10px;
+    padding-left: 20px;
     color: #E86EA0;
     /* color: linear-gradient(#E86EA0,#BA28FF); */
 }
@@ -111,6 +116,8 @@ nav>img {
 
 .switchTheme {
     width: 60px;
+    margin-top: -5px;
+    margin-bottom: 5px;
     height: 32px;
     background: linear-gradient(#E86EA0, #BA28FF);
     border-radius: 65px;
@@ -122,6 +129,7 @@ nav>img {
 #login {
     padding-left: 54px;
     padding-top: 7px;
+    margin-top: -5px;
     width: 147px;
     height: 32px;
     border-radius: 66px;
@@ -231,7 +239,7 @@ nav>img {
     font-weight: 300;
 }
 
-.searchBar > img {
+.searchBar>img {
     width: 28px;
     margin-top: 3%;
     height: 28px;
@@ -358,14 +366,15 @@ nav>img {
 }
 
 
-#slide,#slide-2 {
+#slide,
+#slide-2 {
     width: 95%;
     margin-left: 2%;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-.exchange > img {
+.exchange>img {
     margin-top: 3%;
     margin-left: 45%;
     margin-bottom: -2%;
@@ -405,7 +414,7 @@ nav>img {
 
 .logoOfCurrency {
     margin-top: 15px;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .arrowToRight {
@@ -413,4 +422,83 @@ nav>img {
     margin-right: 10px;
     position: relative;
     top: -10px;
+}
+
+.burgerMenu {
+    display: none;
+    visibility: hidden;
+}
+.pair {
+    position: relative;
+    top: -20%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+}
+
+
+
+@media screen and (max-width:440px) {
+    .burgerMenu {
+        display: block;
+        visibility: visible;
+    }
+
+    header {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    nav>#login {
+        width: 30%;
+        padding-left: 45px;
+        font-weight: 400;
+        margin-left: 53%;
+        margin-bottom: 10px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forBackk {
+        height: 100%;
+    }
+
+    #forBackgroundd,
+    body {
+        height: 210vh;
+    }
+
+    .crypto {
+        display: none;
+    }
+
+    .searchBar {
+        height: 70%;
+    }
+
+    .search {
+        background: none;
+    }
+
+    .pooledTok {
+        padding-bottom: 20px;
+    }
+
+    .pair {
+        visibility: hidden;
+    }
+
+    .exchange {
+        padding-bottom: 60px;
+    }
+
+    .yourBalanceButt {
+        top: 158%;
+        width: 90%;
+        margin-top: 0px;
+    }
 }
