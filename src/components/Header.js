@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../components/Header.css'
 import React, { useEffect, useRef, useState } from 'react';
-import { PageWithGraph } from './secondPage';
 
 export function Header(props) {
 
@@ -26,7 +25,7 @@ export function Header(props) {
                     <img src='internet.png' href="#"></img>
                     <img src='settings.png' href="#"></img>
                     <div className="switchTheme">
-                        <Link to={'/LightMode'}>
+                        <Link to={'/LighThemeLargeGraph'}>
                             <img className='nightModeImg' src="nightMode.png" alt="switch" />
                             <img src="round.png" alt="round" />
                         </Link>

@@ -71,7 +71,7 @@ export function PageWithGraph(props) {
         <div id='forBackk'>
             <div id='forBackgroundd'>
                 <BurgerMenu></BurgerMenu>
-                <Header amount='2'></Header>
+                <Header linkTo='/' amount='2'></Header>
                 <div class="wrapper">
                     <div class="search">
                         <div className='searchBar'>
