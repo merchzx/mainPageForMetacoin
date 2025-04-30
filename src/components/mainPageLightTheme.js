@@ -1,8 +1,7 @@
-import '../components/DarkModeMainPage.css'
-import React, { useEffect, useRef, useState } from 'react';
-import { BurgerMenu } from './burgerMenuComponent';
+import '../components/mainPageLightTheme.css'
+import React, { useEffect, useRef } from 'react';
 import { Header } from './Header';
-
+import { BurgerMenu } from './burgerMenuComponent';
 
 export const TradingViewMarketOverview = () => {
     const containerRef = useRef();
@@ -30,7 +29,7 @@ export const TradingViewMarketOverview = () => {
             belowLineFillColorFalling: 'rgba(41, 98, 255, 0.12)',
             belowLineFillColorGrowingBottom: 'rgba(41, 98, 255, 0)',
             belowLineFillColorFallingBottom: 'rgba(41, 98, 255, 0)',
-            symbolActiveColor: 'rgba(255, 0, 0, 0.12)',
+            symbolActiveColor: 'rgba(41, 98, 255, 0.12)',
             tabs: [
                 {
                     title: 'CRYPTO',
@@ -102,24 +101,22 @@ export const TradingViewWidget = (props) => {
 };
 
 
-
-
-export function DarkMode(props) {
+export function MainPageLightTheme(props) {
     return (
-        <div id='forBack'>
-            <div id='forBackground'>
-                <Header link='MainLightTheme' amount="6" />
-                <BurgerMenu theme='dark'></BurgerMenu>
+        <div id='forBackLT'>
+            <div id='forBackgroundLT'>
+                <Header link='' amount="5" />
+                <BurgerMenu theme='light'></BurgerMenu>
                 <div id='wrapper'>
-                    <div className='startNow'>
+                    <div className='startNowLT'>
                         <h1>All In One</h1>
                         <h1>DeFi Platform</h1>
                         <p>To swap, invest and earn with crypto at ease.</p>
                         <a href='#'>START NOW</a>
                     </div>
-                    <div className='trending'>
+                    <div className='trendingLT'>
                         <h1>Trending</h1>
-                        <div className='miniGraphs'>
+                        <div className='miniGraphsLT'>
                             <div>
                                 <TradingViewWidget name="BINANCE:BTCUSDT"></TradingViewWidget>
                             </div>
@@ -140,14 +137,14 @@ export function DarkMode(props) {
                             </div>
                         </div>
                     </div>
-                    <div className='popularMarkets'>
+                    <div className='popularMarketsLT'>
                         <h1>Popular Markets</h1>
-                        <div className='largeGraph'>
+                        <div className='largeGraphLT'>
                             <TradingViewMarketOverview></TradingViewMarketOverview>
                         </div>
                         <a href='#'>VIEW MORE</a>
                     </div>
-                    <div className='ourResults'>
+                    <div className='ourResultsLT'>
                         <div>
                             <h1>750M+</h1>
                             <p>Trading Volume</p>
@@ -167,43 +164,43 @@ export function DarkMode(props) {
                     </div>
                     <footer>
 
-                        <div className='toRow'>
+                        <div className='toRowLT'>
                             <h1 className='logo'>CRYPTO SIGMAS</h1>
-                            <div className='downloadOn'>
+                            <div className='downloadOnLT'>
                                 <img src='apple.png'></img>
-                                <div className='forText'>
+                                <div className='forTextLT'>
                                     <p>DOWNLOAD ON</p>
                                     <p>App Store</p>
                                 </div>
                             </div>
-                            <div className='downloadOn'>
+                            <div className='downloadOnLT'>
                                 <img src='playMarket.png'></img>
-                                <div className='forText'>
+                                <div className='forTextLT'>
                                     <p>DOWNLOAD ON</p>
                                     <p>Google Play</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='product'>
+                        <div className='productLT'>
                             <h1>Product</h1>
                             <p>Wallet</p>
                             <p>Exchange</p>
                         </div>
-                        <div className='product'>
+                        <div className='productLT'>
                             <h1>About Us</h1>
                             <p>Company</p>
                             <p>Careers</p>
                             <p>Terms Of Service</p>
                             <p>Privacy Policy</p>
                         </div>
-                        <div className='product'>
+                        <div className='productLT'>
                             <h1>Support</h1>
                             <p>Beginner's Guide</p>
                             <p>FAQs</p>
                             <p>Email Us</p>
                             <p>Livechat Support</p>
                         </div>
-                        <div className='product'>
+                        <div className='productLT'>
                             <h1>Socials</h1>
                             <p>Facebook</p>
                             <p>Twitter</p>

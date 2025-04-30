@@ -9,13 +9,13 @@ html, body {
 }
 
 
-#forBackground {
+#forBackgroundLT {
     height: 3600px;
-    background-image: url('scrollbackground.png');
+    background-image: url('/public/lightbackground.png');
 }
 
-#forBack {
-    background-color: #210B54;
+#forBackLT {
+    background-color: #ffffff;
     height: 3600px;
 }
 
@@ -26,34 +26,34 @@ html, body {
     margin-left: 350px;
 }
 
-.startNow {
+.startNowLT {
     margin-top: 67px;
 }
 
-.startNow>h1 {
+.startNowLT>h1 {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 105px;
 }
 
-.startNow>h1:nth-child(1) {
+.startNowLT>h1:nth-child(1) {
     color: #BA28FF;
 }
 
 
-.startNow>h1:nth-child(2) {
+.startNowLT>h1:nth-child(2) {
     color: #E86EA0;
 }
 
-.startNow>p {
+.startNowLT>p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 21px;
     margin-bottom: 90px;
 }
 
-.startNow>a {
+.startNowLT>a {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 18px;
@@ -69,19 +69,22 @@ html, body {
     background: linear-gradient(#E86EA0, #BA28FF);
 }
 
-.trending {
+.trendingLT {
     margin-top: 169px;
 }
 
-.trending>h1 {
-    color: #E86EA0;
+.trendingLT>h1 {
     font-weight: 700;
     font-family: "Inter", sans-serif;
     font-size: 47px;
     margin-left: 490px;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
-.miniGraphs {
+.miniGraphsLT {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     margin-top: 94px;
@@ -92,19 +95,22 @@ html, body {
     height: 330px;
 }
 
-.miniGraphs>div {
+.miniGraphsLT>div {
     scroll-snap-align: center;
     margin-right: 50px;
     height: 250px;
     /* border: 1px solid black; */
 }
 
-.popularMarkets {
+.popularMarketsLT {
     margin-top: 25%;
 }
 
-.popularMarkets>h1 {
-    color: #E86EA0;
+.popularMarketsLT>h1 {
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-weight: 700;
     font-family: "Inter", sans-serif;
     font-size: 47px;
@@ -112,11 +118,11 @@ html, body {
     margin-bottom: 100px;
 }
 
-.largeGraph {
+.largeGraphLT {
     margin-bottom: 100px;
 }
 
-.popularMarkets>a {
+.popularMarketsLT>a {
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 18px;
@@ -125,7 +131,7 @@ html, body {
     height: 59px;
     border-radius: 66px;
     text-decoration: none;
-    color: #FFFDFA;
+    color: #000000;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -134,7 +140,7 @@ html, body {
 
 }
 
-.ourResults {
+.ourResultsLT {
     margin-top: 20%;
     display: flex;
     flex-direction: row;
@@ -142,22 +148,25 @@ html, body {
     width: 100%;
 }
 
-.ourResults>div {
+.ourResultsLT>div {
     width: 228px;
 }
 
-.ourResults>div>h1 {
+.ourResultsLT>div>h1 {
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    color: #BA28FF;
+    background: linear-gradient(#E86EA0, #BA28FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 63px;
 }
 
-.ourResults>div>p {
+.ourResultsLT>div>p {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 31px;
-    color: #FFFDFA;
+    color: #000000;
 }
 
 footer {
@@ -167,7 +176,7 @@ footer {
     margin-top: 25%;
 }
 
-.downloadOn {
+.downloadOnLT {
     margin-top: 50px;
     width: 262px;
     display: flex;
@@ -175,48 +184,48 @@ footer {
     justify-content: space-between;
 }
 
-.forText>p:nth-child(1) {
+.forTextLT>p:nth-child(1) {
     font-family: "Inter", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 300;
     font-size: 21px;
 }
 
 
-.forText>p:nth-child(2) {
+.forTextLT>p:nth-child(2) {
     font-family: "Inter", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 26px;
 }
 
-.toRow {
+.toRowLT {
     height: 265px;
     display: flex;
     flex-direction: column;
 }
 
-.product {
+.productLT {
     display: flex;
     flex-direction: column;
 }
 
-.product>h1 {
+.productLT>h1 {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 32px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.product>p {
+.productLT>p {
     font-family: "Inter", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 26px;
     margin-bottom: 57px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.product>p:nth-child(2) {
+.productLT>p:nth-child(2) {
     margin-top: 39px;
 }
 
@@ -224,13 +233,9 @@ footer {
     visibility: hidden;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 @media screen and (max-width:440px) {
     #wrapper,
-    .miniGraphs {
+    .miniGraphsLT {
         width: 95vw;
         margin-left: 0px;
     }
@@ -256,31 +261,31 @@ html {
         margin-left: 20px;
     }
 
-    .loginAndElse {
+    .loginAndElseLT {
         display: none;
     }
 
-    .popularMarkets>h1,
-    .trending>h1 {
+    .popularMarketsLT>h1,
+    .trendingLT>h1 {
         margin-left: 0px;
         padding-left: 20px;
     }
 
-    .trending>h1 {
+    .trendingLT>h1 {
         padding-left: 30%;
     }
 
-    .ourResults {
+    .ourResultsLT {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .ourResults>div {
+    .ourResultsLT>div {
         margin-top: 10%;
     }
 
-    .popularMarkets>a {
+    .popularMarketsLT>a {
         margin-left: 23%;
     }
 
@@ -288,13 +293,13 @@ html {
         display: none;
     }
 
-    .product,
-    .downloadOn,
+    .productLT,
+    .downloadOnLT,
     footer {
         transform: scale(0.7, 0.7);
     }
 
-    .toRow {
+    .toRowLT {
         height: 100%;
         margin-left: -20px;
         width: 100%;
@@ -305,7 +310,7 @@ html {
         display: none;
     }
 
-    .product {
+    .productLT {
         margin-top: -4%;
     }
 
@@ -314,24 +319,24 @@ html {
         margin-left: -15%;
     }
 
-    .startNow>h1 {
+    .startNowLT>h1 {
         font-family: "Inter", sans-serif;
         font-weight: 700;
         font-size: 60px;
     }
     
-    .startNow>h1:nth-child(1) {
+    .startNowLT>h1:nth-child(1) {
         color: #BA28FF;
         margin-left: 20%;
     }
     
     
-    .startNow>h1:nth-child(2) {
+    .startNowLT>h1:nth-child(2) {
         margin-left: 5%;
         color: #E86EA0;
     }
     
-    .startNow>p {
+    .startNowLT>p {
         font-family: "Inter", sans-serif;
         font-weight: 400;
         color: white;
@@ -340,7 +345,7 @@ html {
         margin-bottom: 90px;
     }
     
-    .startNow>a {
+    .startNowLT>a {
         padding-left: 70px;
         padding-right: 70px;
         padding-top: 18px;
@@ -357,7 +362,7 @@ html {
         background: linear-gradient(#E86EA0, #BA28FF);
     }
 
-    #forBackground,#forBack {
+    #forBackgroundLT,#forBackLT {
         height: 3300px;
     }
 
@@ -370,4 +375,3 @@ html {
     }
 
 }
-

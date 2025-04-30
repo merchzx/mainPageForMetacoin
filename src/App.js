@@ -5,6 +5,7 @@ import { MainPage } from './components/mainPage';
 import { PageWithGraph } from './components/secondPage';
 import { Registr } from './components/registrPage';
 import {PageWithGraphLightTheme} from './components/secondPageLightTheme'
+import { MainPageLightTheme } from './components/mainPageLightTheme';
 
 class App extends React.Component {
 
@@ -17,6 +18,7 @@ class App extends React.Component {
             <Route path="/largeGraph" element={<PageWithGraph></PageWithGraph>}></Route>
             <Route path="/LighThemeLargeGraph" element={<PageWithGraphLightTheme></PageWithGraphLightTheme>}></Route>
             <Route path="/registr" element={<Registr></Registr>}></Route>
+            <Route path="/MainLightTheme" element={<MainPageLightTheme></MainPageLightTheme>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

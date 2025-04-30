@@ -1,6 +1,7 @@
 import '../components/secondPageLightTheme.css'
 import React, { useEffect, useRef, memo } from 'react';
 import { Header } from './Header';
+import { BurgerMenu } from './burgerMenuComponent';
 
 function TradingViewWidget() {
     const container = useRef();
@@ -69,7 +70,8 @@ export function PageWithGraphLightTheme(props) {
     return (
         <div id='forBackkLT'>
             <div id='forBackgroundLT'>
-                <Header amount='2'></Header>
+                <Header link='largeGraph' amount='3'></Header>
+                <BurgerMenu theme='light'></BurgerMenu>
                 <div class="wrapper">
                     <div class="exchangeLT">
                         <div className='currentBalanceLT'>
