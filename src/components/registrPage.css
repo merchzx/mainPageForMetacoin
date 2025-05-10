@@ -97,34 +97,35 @@ input {
 }
 
 .div1 {
+    margin-top: -5%;
     grid-area: 1 / 1 / 4 / 13;
 }
 
 .div2 {
-    margin-top: -30%;
+    margin-top: -32%;
     grid-area: 4 / 1 / 7 / 7;
 }
 
 .div3 {
-    margin-top: -30%;
+    margin-top: -32%;
 
     grid-area: 4 / 7 / 7 / 13;
 }
 
 .div4 {
-    margin-top: -32%;
+    margin-top: -28%;
 
     grid-area: 7 / 1 / 10 / 13;
 }
 
 .div5 {
-    margin-top: -100%;
+    margin-top: -84%;
 
     grid-area: 10 / 1 / 13 / 7;
 }
 
 .div6 {
-    margin-top: -100%;
+    margin-top: -84%;
     grid-area: 10 / 7 / 13 / 13;
 }
 
@@ -151,5 +152,6 @@ input::placeholder {
     font-family: "Inter", sans-serif;
     background: linear-gradient(#E86EA0, #BA28FF);
     color: white;
+    margin-top: 1.5%;
     font-size: 20px;
 }
